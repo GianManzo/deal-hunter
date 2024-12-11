@@ -1,9 +1,11 @@
+import { Steps, Welcome } from "@/modules";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function RootLayout() {
   return (
     <View style={styles.container}>
-      <Text>Home</Text>
+      <Welcome />
+      <Steps />
     </View>
   );
 }
@@ -11,8 +13,8 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    padding: 40,
+    gap: 40,
   },
   title: {
     fontSize: 20,
